@@ -1,0 +1,54 @@
+@import "../base/variables";
+header {
+    background-color: $bg-header;
+    padding: 10px 0;
+    .top-nav {
+        // position
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        // child
+        &__logo {
+            margin-right: 20px;
+        }
+        &__menu,
+        &__search {
+            display: flex;
+            flex-flow: row nowrap;
+            //  child
+            li {
+                margin-right: 20px;
+                a {
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    transition: all 0.3s ease;
+                    &:hover {
+                        color: $green-light;
+                    }
+                }
+            }
+        }
+        &__search {
+            li:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+#res-menu,
+label,
+#sign-open,
+#sign-close {
+    display: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    &__btn {
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $green-light;
+    }
+}

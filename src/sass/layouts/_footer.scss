@@ -1,0 +1,37 @@
+@import "../base/variables";
+footer {
+    background-color: $bg-footer;
+    padding: 20px 0;
+    .footer {
+        color: white;
+        width: 400px;
+        margin-top: 20px;
+        &__title {
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding-top: 30px;
+        }
+        &__content {
+            line-height: 30px;
+            padding-bottom: 20px;
+            li a {
+                transition: all 0.3s ease;
+                &:hover {
+                    color: $green-light;
+                }
+            }
+        }
+    }
+    .copyright {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        color: white;
+        border-top: 1px rgb(180, 180, 180) solid;
+        &__detail,
+        &__payment {
+            margin-top: 20px;
+        }
+    }
+}

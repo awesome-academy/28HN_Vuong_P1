@@ -1,0 +1,12 @@
+/* Set các giá trị với màn hình tương ứng */
+
+$green-light: #809c37;
+.green-light {
+    color: $green-light;
+}
+
+$bg-header: #f4f4f4;
+$bg-footer: rgb(0, 0, 0);
+$MOBILE: 480px;
+$TABLET: 750px;
+$COMPUTER: 1000px;

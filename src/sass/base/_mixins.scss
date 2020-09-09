@@ -1,0 +1,38 @@
+/* Mixin */
+
+@import '../base/variables';
+@mixin Responsive($canvas) {
+    @if $canvas==MOBILE {
+        @media only screen and (max-width: $MOBILE) {
+            @content;
+        }
+    }
+    @else if $canvas==TABLET {
+        @media only screen and (max-width: $TABLET) {
+            @content;
+        }
+    }
+    @else if $canvas==COMPUTER {
+        @media only screen and (max-width: $COMPUTER) {
+            @content;
+        }
+    }
+}
+
+@mixin minResponsive($canvas) {
+    @if $canvas==MOBILE {
+        @media only screen and (min-width: $MOBILE) {
+            @content;
+        }
+    }
+    @else if $canvas==TABLET {
+        @media only screen and (min-width: $TABLET) {
+            @content;
+        }
+    }
+    @else if $canvas==COMPUTER {
+        @media only screen and (min-width: $COMPUTER) {
+            @content;
+        }
+    }
+}

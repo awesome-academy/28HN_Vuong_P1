@@ -36,3 +36,10 @@
         }
     }
 }
+
+@mixin fontFaceGenerator($family, $font) {
+    @font-face {
+        font-family: "#{$family}";
+        src: url("../assets/fonts/#{$font}.ttf");
+    }
+}

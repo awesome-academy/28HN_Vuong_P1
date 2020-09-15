@@ -397,3 +397,50 @@
         }
     }
 }
+
+// product --------------------------------------------
+@include Responsive(COMPUTER) {
+    main {
+        .the-main {
+            .side-bar,
+            .content {
+                grid-column-start: span 12;
+            }
+            .side-bar {
+                .ads {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@include Responsive(TABLET) {
+    #grid:checked~.products--mod .product:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)) {
+        display: none;
+    }
+    main {
+        .banner-product {
+            display: none;
+        }
+        .the-main {
+            .content {
+                .products--mod {
+                    .product:nth-child(1),
+                    .product:nth-child(2),
+                    .product:nth-child(3),
+                    .product:nth-child(4) {
+                        width: 45%;
+                    }
+                    .product--list {
+                        &__img {
+                            img {
+                                width: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

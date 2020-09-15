@@ -1,4 +1,5 @@
 @import "../base/mixins";
+@import "../base/variables";
 @include fontFaceGenerator("UTM Androgyne", "UTM Androgyne.ttf");
 main {
     .slider {
@@ -155,12 +156,12 @@ main {
                     font-size: 18px;
                     color: gray;
                     &:hover {
-                        color: #789629;
+                        color: $default-color;
                     }
                 }
                 &:nth-child(2) a {
                     font-size: 34px;
-                    color: #789629;
+                    color: $default-color;
                 }
             }
         }
@@ -181,11 +182,11 @@ main {
                         a {
                             color: black;
                             &:hover {
-                                color: #789629;
+                                color: $default-color;
                             }
                         }
                         &:nth-child(5) a {
-                            color: #789629;
+                            color: $default-color;
                         }
                     }
                 }
@@ -240,7 +241,7 @@ main {
                     font-weight: 600;
                 }
                 &__price {
-                    color: #789629;
+                    color: $default-color;
                     font-family: "UTM Androgyne";
                     font-size: 18px;
                     span.vnd {
@@ -275,7 +276,7 @@ main {
                         border: 2px gray solid;
                         cursor: pointer;
                         &:hover {
-                            background-color: #789629;
+                            background-color: $default-color;
                         }
                     }
                     input {
@@ -288,7 +289,7 @@ main {
                     }
                     #like:checked~label:first-child {
                         color: white;
-                        background-color: #789629;
+                        background-color: $default-color;
                     }
                     span {
                         cursor: pointer;
@@ -297,7 +298,7 @@ main {
                         padding: 10px 12px;
                         margin: 10px;
                         color: white;
-                        background-color: #789629;
+                        background-color: $default-color;
                         border-radius: 5px;
                         border: none;
                     }
@@ -398,7 +399,7 @@ main {
                             color: black;
                             font-size: 13px;
                             &:hover {
-                                color: #789629;
+                                color: $default-color;
                             }
                         }
                     }
@@ -406,7 +407,7 @@ main {
                         a {
                             color: white;
                         }
-                        background-color: #789629;
+                        background-color:$default-color;
                     }
                 }
                 img {
@@ -414,6 +415,7 @@ main {
                 }
                 h3 {
                     font-size: 14px;
+                    text-transform: uppercase;
                 }
                 hr {
                     margin: 5px 0;
@@ -433,7 +435,7 @@ main {
                         float: left;
                         font-size: 13px;
                         &:hover {
-                            color: #789629;
+                            color: $default-color;
                         }
                     }
                     span {

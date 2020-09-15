@@ -334,3 +334,66 @@
         }
     }
 }
+
+// blog -------------------------------------------
+@include minResponsive (TABLET) {
+    .blogs {
+        .articles {
+            .article {
+                grid-column-start: span 3;
+            }
+            .article:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)) {
+                display: block;
+            }
+            .article:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(5)):not(:nth-child(6)) {
+                display: none;
+            }
+        }
+    }
+}
+
+@include minResponsive (COMPUTER) {
+    .blogs {
+        .articles {
+            .article {
+                grid-column-start: span 2;
+            }
+            .article:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)) {
+                display: block;
+            }
+            .article:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(5)):not(:nth-child(6)) {
+                display: block;
+            }
+        }
+    }
+}
+
+// blog detail --------------------------------------------
+@include Responsive(COMPUTER) {
+    .news {
+        h1,
+        h2,
+        &__expand {
+            display: none;
+        }
+        &__content {
+            grid-column-start: span 6;
+        }
+    }
+}
+
+@include Responsive(TABLET) {
+    .news {
+        &__content {
+            form {
+                .col-10,
+                .col-90 {
+                    width: 100%;
+                }
+                input[type=submit] {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}

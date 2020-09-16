@@ -444,3 +444,34 @@
         }
     }
 }
+
+// product detail --------------------------------------------
+@include Responsive(COMPUTER) {
+    .product-detail {
+        &__product,
+        &__detail,
+        &__desc {
+            grid-column-start: span 12;
+        }
+        &__top-sale {
+            display: none;
+        }
+    }
+}
+
+@include Responsive(TABLET) {
+    .product-detail {
+        &__detail {
+            &__social {
+                flex-direction: column;
+            }
+        }
+        &__desc {
+            &__text,
+            &__img {
+                grid-column-start: span 9;
+            }
+            &__text:first-child {}
+        }
+    }
+}

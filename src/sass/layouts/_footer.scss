@@ -17,9 +17,13 @@ footer {
             padding-bottom: 20px;
             li a {
                 transition: all 0.3s ease;
+                color: white;
                 &:hover {
                     color: $green-light;
                 }
+            }
+            li.green-light a {
+                color: $green-light;
             }
         }
     }

@@ -6,7 +6,7 @@
     <meta name="description" content="The Sun Web.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/icons/favicon-32x32.png" type="image/x-icon">
-    <title>Đăng nhập</title>
+    <title>Liên hệ</title>
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
   </head>
@@ -40,25 +40,55 @@
     </header>
     <main> 
       <div class="container"> 
-        <div class="signin">
+        <div class="contact-us">
           <section class="breadcrumb">
             <ul>
               <li>Home</li>
-              <li> <a>Đăng nhập</a></li>
+              <li> <a>Liên hệ</a></li>
             </ul>
           </section>
-          <h1>Đăng nhập</h1>
-          <button>Đăng ký</button><br><br><br>
-          <form>
-            <h2>Khách hàng đăng ký</h2>
-            <label>Nếu bạn có một tài khoản xin vui lòng đăng nhập</label><br><br>
-            <label for="f-email">Địa chỉ Email * </label><br>
-            <input id="f-email" type="text" name="f-email"><br>
-            <label for="fpwd">Password * </label><br>
-            <input id="fpwd" type="text" name="fpwd"><br>
-            <label> <a>Quên mật khẩu ?</a></label>
-            <input type="button" value="Đăng nhập">
-          </form>
+          <h1>Liên hệ</h1>
+          <div class="contact-us__content"> 
+            <div class="contact-us__content__img"> <img src="../assets/images/Layer_75.png" alt=""></div>
+            <div class="contact-us__content__desc"> 
+              <form> 
+                <div class="row"> 
+                  <div class="col-100"> 
+                    <label>Gửi email cho chúng tôi</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-20">
+                    <label for="f-name">Tên *</label>
+                  </div>
+                  <div class="col-80"> 
+                    <input id="f-name" type="text" name="f-name">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-20">
+                    <label for="f-email">Email *</label>
+                  </div>
+                  <div class="col-80"> 
+                    <input id="f-email" type="text" name="f-email">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-20">
+                    <label for="f-cmt">Tin nhắn *</label>
+                  </div>
+                  <div class="col-80"> 
+                    <textarea id="f-cmt" name="f-cmt" rows="10"></textarea>
+                  </div>
+                </div>
+                <div class="row"> 
+                  <div class="col-100"> 
+                    <input type="submit" value="Gửi">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </main>

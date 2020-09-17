@@ -2,22 +2,24 @@
 footer {
     background-color: $bg-footer;
     padding: 20px 0;
+    margin-top: 10px;
     .footer {
-        color: white;
+        color: #3f3f3f;
         width: 400px;
         margin-top: 20px;
         &__title {
-            font-size: 24px;
+            font-size: 20px;
             text-transform: uppercase;
             font-weight: bold;
             padding-top: 30px;
+            color: #d1d1d1;
         }
         &__content {
             line-height: 30px;
             padding-bottom: 20px;
             li a {
                 transition: all 0.3s ease;
-                color: white;
+                color: #3f3f3f;
                 &:hover {
                     color: $green-light;
                 }

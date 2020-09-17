@@ -2,6 +2,10 @@
 header {
     background-color: $bg-header;
     padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    opacity: 0.83;
     .top-nav {
         // position
         display: flex;

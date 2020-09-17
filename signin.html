@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Vuong Tran">
+    <meta name="description" content="The Sun Web.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icons/favicon-32x32.png" type="image/x-icon">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container"> 
+          <div class="top-nav"><a class="top-nav__logo"><img id="logo" src="./assets/icons/Logo.png" alt="logo"></a>
+            <input id="res-menu" type="checkbox">
+            <label for="res-menu"> <i class="fa fa-bars fa-2x" id="sign-open"> </i><i class="fa fa-times fa-3x" id="sign-close"> </i></label>
+            <ul class="top-nav__menu"> 
+              <li> <a>Trang chủ</a></li>
+              <li> <a>Giới thiệu </a></li>
+              <li> 
+                <div class="dropdown"> 
+                  <div class="dropdown__btn">Sản phẩm <i class="fas fa-angle-down"></i></div>
+                  <div class="dropdown__content"> <a>Mỹ phẩm</a><a>Trang sức</a><a>Phụ kiện </a><a>Nước hoa</a></div>
+                </div>
+              </li>
+              <li> <a>Tin tức </a></li>
+              <li> <a>Bản đồ </a></li>
+              <li> <a>Liên hệ</a></li>
+            </ul>
+            <ul class="top-nav__search"> 
+              <li> <a> <i class="fas fa-shopping-cart"></i></a></li>
+              <li> <a> <i class="fas fa-search"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main> 
+      <div class="container"> 
+        <div class="signin">
+          <section class="breadcrumb">
+            <ul>
+              <li>Home</li>
+              <li> <a>Đăng nhập</a></li>
+            </ul>
+          </section>
+          <h1>Đăng nhập</h1>
+          <button>Đăng ký</button><br><br><br>
+          <form>
+            <h2>Khách hàng đăng ký</h2>
+            <label>Nếu bạn có một tài khoản xin vui lòng đăng nhập</label><br><br>
+            <label for="f-email">Địa chỉ Email * </label><br>
+            <input id="f-email" type="text" name="f-email"><br>
+            <label for="fpwd">Password * </label><br>
+            <input id="fpwd" type="text" name="fpwd"><br>
+            <label> <a>Quên mật khẩu ?</a></label>
+            <input type="button" value="Đăng nhập">
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer> 
+      <div class="container">
+        <div class="footer"> 
+          <div class="contact"> 
+            <p class="footer__title">Liên hệ với chúng tôi</p>
+            <ul class="footer__content">
+              <li><i class="fas fa-map-marker-alt green-light"></i> Tầng 4, Tòa nhà Hanoi Group, Số 442 Đội Cấn,<br> &emsp;P. Cống Vị, Quận Ba Đình, Hà Nội </li>
+              <li><i class="fas fa-phone-alt green-light"></i> (04) 6674 2332 - <i class="fas fa-blender-phone green-light"></i> (04) 3786 8904</li>
+              <li><i class="fas fa-phone-alt green-light"></i> (04) 6680 9686 - <span class="green-light"><i class="fas fa-envelope"></i> Support@bizweb.vn</span></li>
+            </ul>
+          </div>
+          <div class="delivery"> 
+            <p class="footer__title">Chuyển hàng</p>
+            <ul class="footer__content"> 
+              <li> <a>mua sắm trực tuyến </a></li>
+              <li class="green-light"> <a>&bull; Đến từ công ty chúng tôi </a></li>
+              <li> <a>Chính sách vận chuyển </a></li>
+              <li> <a>vận chuyển thông tin </a></li>
+            </ul>
+          </div>
+          <div class="support"> 
+            <p class="footer__title">Hỗ trợ</p>
+            <ul class="footer__content"> 
+              <li> <a>Câu chuyện của chúng ta</a></li>
+              <li> <a>Thanh toán an toàn </a></li>
+              <li> <a>Tùy chọn vận chuyển </a></li>
+              <li> <a>Chính sách vận chuyển </a></li>
+            </ul>
+          </div>
+          <div class="info">
+            <p class="footer__title">Thông tin </p>
+            <ul class="footer__content"> 
+              <li> <a>về Chúng tôi </a></li>
+              <li> <a>Điều khoản & Điều kiện </a></li>
+              <li> <a>Chính sách riêng tư </a></li>
+              <li> <a>Đơn đặt hàng và Returns </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright"> 
+          <p class="copyright__detail">&copy; Copyright 2008-2014 DKT Technology JSC </p>
+          <div class="copyright__payment"><img src="../assets/images/payment.png" alt="payment"></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

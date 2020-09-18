@@ -23,6 +23,8 @@
         </form>
       </div>
     </div>
+    <input id="dropdown-prod" type="checkbox" name="dropdown-prod">
+    <input id="dropdown-cart" type="checkbox" name="dropdown-cart">
     <header>
       <div class="container"> 
         <nav>
@@ -30,20 +32,63 @@
             <input id="res-menu" type="checkbox">
             <label for="res-menu"> <i class="fa fa-bars fa-2x" id="sign-open"> </i><i class="fa fa-times fa-3x" id="sign-close"> </i></label>
             <ul class="top-nav__menu"> 
-              <li> <a>Trang chủ</a></li>
+              <li> <a href="/">Trang chủ</a></li>
               <li> <a>Giới thiệu </a></li>
               <li> 
-                <div class="dropdown"> 
-                  <div class="dropdown__btn">Sản phẩm <i class="fas fa-angle-down"></i></div>
-                  <div class="dropdown__content"> <a>Mỹ phẩm</a><a>Trang sức</a><a>Phụ kiện </a><a>Nước hoa </a></div>
+                <div class="dropdown-prod"> 
+                  <div class="dropdown-prod__btn"> 
+                    <label for="dropdown-prod">Sản phẩm <i class="fas fa-angle-down"></i></label>
+                  </div>
+                  <div class="dropdown-prod__content"> 
+                    <div class="col">
+                      <h3>Dưỡng da</h3><a>Áo khoác</a><a class="green-light">&bull; Bộ áo liền quần</a><a>Dresses</a><a>Quần / Váy</a><a>Quần short</a><a>Quần jean</a><a>Đồ đan</a><a>Áo nỉ</a>
+                    </div>
+                    <div class="col">
+                      <h3>Nước hoa</h3><a>Áo cánh / Áo sơ mi</a><a>Khăn quàng cổ và Foulards</a><a>Dệt kim Hats & Gloves</a><a>Vớ & Socks</a><a>Jewerly</a><a>Bị bảo vệ</a><a>Giày</a>
+                    </div>
+                    <div class="col"> 
+                      <h3>Trang sức</h3><a>Áo cánh / Áo sơ mi</a><a>Túi xách & Balô</a><a>Khăn quàng cổ và Foulards</a><a>Dệt kim Hats & Gloves</a><a>Vớ & Socks</a><a>Jewerly</a><a>Bị bảo vệ</a><a>Giày</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li> <a>Tin tức </a></li>
               <li> <a>Bản đồ </a></li>
-              <li> <a>Liên hệ</a></li>
+              <li> <a href="/contact-us.html">Liên hệ</a></li>
             </ul>
             <ul class="top-nav__search"> 
-              <li> <a> <i class="fas fa-shopping-cart"></i></a></li>
+              <li> 
+                <div class="dropdown-cart"> 
+                  <div class="dropdown-cart__btn"> 
+                    <label for="dropdown-cart"><i class="fas fa-shopping-cart"></i></label>
+                  </div>
+                  <div class="dropdown-cart__content">
+                    <div class="dropdown-cart__content__row">
+                      <div class="img"><img src="../assets/images/Layer 62 copy.png" alt=""></div>
+                      <div class="desc"> 
+                        <p>Áo sơ mi Nam</p>
+                        <p>120.000<span>đ</span></p>
+                      </div>
+                      <div class="icon"><i class="fas fa-times"></i></div>
+                    </div>
+                    <div class="dropdown-cart__content__row">
+                      <div class="img"><img src="../assets/images/Layer 62 copy.png" alt=""></div>
+                      <div class="desc"> 
+                        <p>Áo sơ mi Nam</p>
+                        <p>120.000<span>đ</span></p>
+                      </div>
+                      <div class="icon"><i class="fas fa-times"></i></div>
+                    </div>
+                    <div class="dropdown-cart__content__row">
+                      <div>
+                        <p>Tổng só </p>
+                        <p>240.000 <span>đ</span></p>
+                      </div>
+                      <button>Giỏ hàng</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
               <li> <a> <i class="fas fa-search"></i></a></li>
             </ul>
           </div>

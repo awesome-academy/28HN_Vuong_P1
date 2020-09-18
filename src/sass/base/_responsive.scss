@@ -3,7 +3,7 @@
 @import "../base/placeholders";
 @import "../base/variables";
 @import "../components/components";
-// ------------------------
+// header ------------------------
 @include Responsive(TABLET) {
     // for header
     header {
@@ -63,35 +63,56 @@
         background-color: $bg-footer;
         z-index: 998;
         li {
-            a,
-            .dropdown .dropdown__btn {
-                display: block;
-                font-size: 35px;
+            &>a,
+            .dropdown-prod .dropdown-prod__btn {
+                display: flex;
+                font-size: 30px;
                 font-weight: 600;
                 line-height: 50px;
                 margin: 0;
                 padding: 20px;
             }
-            a {
+            &>a {
                 color: white;
                 &:hover {
                     border: none;
                     color: $green-light;
                 }
             }
-            .dropdown .dropdown__content a {
-                width: 100%;
-                color: black;
-                &:hover {
-                    border: none;
-                    color: $green-light;
-                }
-            }
+            // .dropdown-prod .dropdown-prod__content a {
+            //     width: 100%;
+            //     color: black;
+            //     &:hover {
+            //         border: none;
+            //         color: $green-light;
+            //     }
+            // }
         }
     }
 }
 
-// -------------------------
+//  ***** popup
+@include Responsive(COMPUTER) {
+    .dropdown-prod {
+        &__content {
+            left: -300px;
+        }
+    }
+}
+
+@include Responsive(TABLET) {
+    .dropdown-prod {
+        &__content {
+            width: 430px;
+            left: -100px;
+            top: 80px;
+            // flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+// footer -------------------------
 @include Responsive(TABLET) {
     //  for footer 
     footer .copyright {
@@ -138,7 +159,7 @@
     }
 }
 
-// *****
+// ***** for static-blog 
 @include minResponsive(TABLET) {
     //  for static-blog 
     main .static-blog {
@@ -161,7 +182,7 @@
     }
 }
 
-// *****
+// ***** for slider
 @media screen and (min-width: 812px) {
     //  for slider
     main .slider {
@@ -169,7 +190,7 @@
     }
 }
 
-// *****
+// ***** for reviews
 @include Responsive(COMPUTER) {
     // for reviews
     main .reviews {
@@ -210,6 +231,7 @@
     }
 }
 
+// ***** for products
 @include Responsive(TABLET) {
     //  for products
     main .products {
@@ -265,7 +287,7 @@
     }
 }
 
-// *****
+// ***** social
 @include Responsive(COMPUTER) {
     main .social {
         .social-network {
@@ -288,7 +310,7 @@
     }
 }
 
-//  ******
+//  ****** general
 @include Responsive(COMPUTER) {
     main .general-cover {
         .general {

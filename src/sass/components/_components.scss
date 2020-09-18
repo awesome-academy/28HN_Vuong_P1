@@ -1,8 +1,12 @@
+@import "../base/variables";
 .dropdown {
     position: relative;
     display: inline-block;
     &__btn {
         cursor: pointer;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $green-light;
     }
     &__content {
         display: none;

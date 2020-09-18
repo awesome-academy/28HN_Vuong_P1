@@ -11,10 +11,22 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
   </head>
   <body>
+    <input id="popup" type="checkbox" name="popup" checked>
+    <div class="popup">
+      <label for="popup"><img src="../assets/images/close.png" alt=""></label>
+      <div class="popup__content">
+        <h1>Gửi email</h1>
+        <p>Hãy gửi email cua bạn liên hệ với chúng tôi để đc tư vấn tôt nhất<br>Sự hai lòng cua bạn la thành công của chúng tôi</p>
+        <form>
+          <input id="popup-email" type="text" name="popup-email" placeholder="Email của bạn ...">
+          <input type="submit" value="Gửi email">
+        </form>
+      </div>
+    </div>
     <header>
       <div class="container"> 
         <nav>
-          <div class="top-nav"><a class="top-nav__logo"><img id="logo" src="./assets/icons/Logo.png" alt="logo"></a>
+          <div class="top-nav"><a class="top-nav__logo"><img id="logo" src="../assets/icons/Logo.png" alt="logo"></a>
             <input id="res-menu" type="checkbox">
             <label for="res-menu"> <i class="fa fa-bars fa-2x" id="sign-open"> </i><i class="fa fa-times fa-3x" id="sign-close"> </i></label>
             <ul class="top-nav__menu"> 
@@ -23,7 +35,7 @@
               <li> 
                 <div class="dropdown"> 
                   <div class="dropdown__btn">Sản phẩm <i class="fas fa-angle-down"></i></div>
-                  <div class="dropdown__content"> <a>Mỹ phẩm</a><a>Trang sức</a><a>Phụ kiện </a><a>Nước hoa</a></div>
+                  <div class="dropdown__content"> <a>Mỹ phẩm</a><a>Trang sức</a><a>Phụ kiện </a><a>Nước hoa </a></div>
                 </div>
               </li>
               <li> <a>Tin tức </a></li>

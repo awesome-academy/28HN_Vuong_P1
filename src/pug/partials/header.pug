@@ -1,8 +1,19 @@
+input#popup(type="checkbox", name="popup" checked)
+.popup
+    label(for="popup")
+        img(src="../assets/images/close.png", alt="")
+    .popup__content
+        h1 Gửi email
+        p Hãy gửi email cua bạn liên hệ với chúng tôi để đc tư vấn tôt nhất<br>Sự hai lòng cua bạn la thành công của chúng tôi
+        form
+            input#popup-email(type="text", name="popup-email" placeholder="Email của bạn ...")
+            input(type="submit", value="Gửi email")
+
 header
     .container 
         nav
             .top-nav
-                a.top-nav__logo #[img#logo(src="./assets/icons/Logo.png" alt="logo")]
+                a.top-nav__logo #[img#logo(src="../assets/icons/Logo.png" alt="logo")]
                 input#res-menu(type="checkbox")
                 label( for="res-menu") 
                     i#sign-open.fa.fa-bars.fa-2x 
@@ -20,7 +31,7 @@ header
                                 a Mỹ phẩm
                                 a Trang sức
                                 a Phụ kiện 
-                                a Nước hoa
+                                a Nước hoa 
                     li 
                         a Tin tức 
                     li 

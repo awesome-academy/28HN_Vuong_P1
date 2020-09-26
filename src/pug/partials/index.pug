@@ -1,0 +1,282 @@
+main 
+    section.slider 
+        .container
+            .overflow
+                a(href="#")
+                    picture
+                        source(media="(max-width: 812px)" srcset="../assets/images/home/Slider580px.png")
+                        img(src="../assets/images/home/Slider.png" alt="slider")
+    section.group-3
+        .container 
+            ul.group-3__list
+                li 
+                    .pic 
+                        img(src="../assets/images/home/plane.png" alt="air plane")
+                    p Miễn phí vận chuyển trên toàn quốc
+                li 
+                    .pic 
+                        img(src="../assets/images/home/gift.png" alt="gift")
+                    p Nhận ngay quà tặng trị giá 350.000đ
+                li 
+                    .pic 
+                        img(src="../assets/images/home/star.png" alt="star")
+                    p Giảm 30% cho đơn hàng trên 5.000.000đ 
+    section.static-blog 
+        .container 
+            .static-blog__list 
+                .list__double 
+                    div
+                        a(href="#")
+                            img(src="../assets/images/home/1-sua-tam.png", alt="sữa tắm")
+                    div
+                        a(href="#")
+                            img(src="../assets/images/home/2-nuoc-hoa.png", alt="nước hoa")
+                .list__single
+                    a(href="#") 
+                        img(src="../assets/images/home/6-vong-tay.png", alt="vòng tay")
+                .list__single 
+                    a(href="#")
+                        img(src="../assets/images/home/4-my-pham.png", alt="mỹ phẩm")
+                .list__double 
+                    div
+                        a(href="#")
+                            img(src="../assets/images/home/5-trang-suc.png", alt="trang sức")
+                    div
+                        a(href="#")
+                            img(src="../assets/images/home/6-quyen-ru.png", alt="quyến rũ")
+    section.reviews
+        .container
+            input(type="radio" name="slider" id="slide1")
+            input(type="radio" name="slider" id="slide2" checked)
+            input(type="radio" name="slider" id="slide3")
+            .review
+                .review__avatar
+                    img(src="../assets/images/home/giam-doc-phat-trien-sp.png" alt="avatar")
+                
+                ul.review__desc
+                    li TUTILE
+                    li _ Giám đốc phát triển sản phẩm
+                p.review__content "Vẫn là vẻ bề ngoài vô cùng đơn giản với các tông màu trắng, hồng làm chủ đạo nhưng lại tạo ra sức hút kỳ lạ với những ai cầm trên tay sản phẩm ấy! Với công nghệ cải tiến mới nhất, hãng Rohto "
+
+                .bullets
+                    label(for="slide1" class="slide")
+                    label(for="slide2" class="slide")
+                    label(for="slide3" class="slide")
+    section.products 
+        ul.products__list 
+            li 
+                a(href="/product.html") Sản phẩm mới 
+            li 
+                a(href="/product.html") Sản phẩm bán chạy 
+            li 
+                a(href="/product.html") Sản phẩm đặc biệt
+        .line 
+            img(src="../assets/images/line.png", alt="------//////------")
+        ul.products__menu 
+            li 
+                ul.menu-child 
+                    li 
+                        a(href="#") Mỹ phẩm 
+                    li 
+                        a(href="#") Chăm sóc da 
+                    li 
+                        a(href="#") Dành cho tóc 
+            li 
+                ul.menu-child
+                    li 
+                        a(href="#") Nước hoa 
+                    li 
+                        a(href="#") Trang sức 
+                    li 
+                        a(href="#") Quà tặng 
+        .products__items
+            
+            .item.disable 
+                a(href="#") 
+                    img.item__img(src="../assets/images/home/Layer 89.png", alt="")
+                p.item__trademark tyffany
+                p.item__species Mỹ phẩm châu Âu
+                p.item__line ____
+                p.item__price 355.000
+                    span.vnd đ         
+            .item 
+                a(href="#") 
+                    img.item__img(src="../assets/images/home/Layer 78.png", alt="")
+                p.item__trademark OHUI
+                p.item__species Mỹ phẩm châu Âu
+                p.item__line ____
+                p.item__price 355.000
+                    span.vnd đ
+                ul.products__action 
+                    button.action__buy Mua hàng 
+                    input#like(type="checkbox", name="like" checked)
+                    //- label(for="like" class="like") <i class="fas fa-heart"></i>
+                    span.like <i class="fas fa-heart"></i>
+                    span.reset <i class="fas fa-sync fa-2x"></i>
+            .item 
+                a(href="#") 
+                    img.item__img(src="../assets/images/home/Layer 85.png", alt="")
+                p.item__trademark home
+                p.item__species Mỹ phẩm châu Âu
+                p.item__line -----
+                p.item__price 355.000
+                    span.vnd đ 
+                    span.old-price 450.000
+                    span.old-vnd đ
+                ul.products__action 
+                    button.action__buy Mua hàng 
+                    input#like(type="checkbox", name="like" checked)
+                    //- label(for="like" class="like") <i class="fas fa-heart"></i>
+                    span.like <i class="fas fa-heart"></i>
+                    span.reset <i class="fas fa-sync fa-2x"></i>
+            .item 
+                a(href="#") 
+                    img.item__img(src="../assets/images/home/Layer 83.png", alt="")
+                p.item__trademark deora
+                p.item__species Mỹ phẩm châu Âu
+                p.item__line ____
+                p.item__price 355.000
+                    span.vnd đ
+                ul.products__action 
+                    button.action__buy Mua hàng 
+                    input#like(type="checkbox", name="like" checked)
+                    //- label(for="like" class="like") <i class="fas fa-heart"></i>
+                    span.like <i class="fas fa-heart"></i>
+                    span.reset <i class="fas fa-sync fa-2x"></i>
+            .item 
+                a(href="#") 
+                    img.item__img(src="../assets/images/home/Layer 94.png", alt="")
+                p.item__trademark sarvon
+                p.item__species Mỹ phẩm châu Âu
+                p.item__line ____
+                p.item__price 355.000
+                    span.vnd đ
+                ul.products__action 
+                    button.action__buy Mua hàng 
+                    input#like(type="checkbox", name="like" checked)
+                    //- label(for="like" class="like") <i class="fas fa-heart"></i>
+                    span.like <i class="fas fa-heart"></i>
+                    span.reset <i class="fas fa-sync fa-2x"></i>
+            .item.disable
+                a(href="#") 
+                    img.item__img(src="../assets/images/home/Layer 88.png", alt="")
+                p.item__trademark tyffany
+                p.item__species Mỹ phẩm châu Âu
+                p.item__line ____
+                p.item__price 355.000
+                    span.vnd đ
+                
+            .control 
+                .arrow-pre <i class="fas fa-arrow-left fa-2x"></i> 
+                .arrow-next <i class="fas fa-arrow-right fa-2x"></i> 
+    section.social 
+        .container 
+            ul.social-network 
+                //- li 
+                //-     a <span class="fa-stack"><i class="far fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x"></i></span> Facebook       
+                //- li 
+                //-     a <span class="fa-stack"><i class="far fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x"></i></span> Twitter
+                //- li 
+                //-     a <span class="fa-stack"><i class="far fa-circle fa-stack-2x"></i><i class="fab fa-instagram fa-stack-1x"></i></span> Instagram
+                //- li 
+                //-     a <span class="fa-stack"><i class="far fa-circle fa-stack-2x"></i><i class="fab fa-google-plus-g fa-stack-1x"></i></span> Google +
+                //- li 
+                //-     a <span class="fa-stack"><i class="far fa-circle fa-stack-2x"></i><i class="fab fa-pinterest fa-stack-1x"></i></span> Pinterest 
+                //- li 
+                //-     a <span class="fa-stack"><i class="far fa-circle fa-stack-2x"></i><i class="fab fa-linkedin-in fa-stack-1x"></i></span> Linkedin
+                li
+                    a(href="")
+                        span.fa-stack <i class="far fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x"></i>
+                        span Facebook
+                li
+                    a(href="")
+                        span.fa-stack <i class="far fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x"></i>
+                        span Twitter
+                li
+                    a(href="")
+                        span.fa-stack <i class="far fa-circle fa-stack-2x"></i><i class="fab fa-instagram  fa-stack-1x"></i>
+                        span Instagram
+                li
+                    a(href="")
+                        span.fa-stack <i class="far fa-circle fa-stack-2x"></i><i class="fab fa-google-plus-g fa-stack-1x"></i>
+                        span Google +
+                li
+                    a(href="")
+                        span.fa-stack <i class="far fa-circle fa-stack-2x"></i><i class="fab fa-pinterest fa-stack-1x"></i>
+                        span Pinterest 
+                li
+                    a(href="")
+                        span.fa-stack <i class="far fa-circle fa-stack-2x"></i><i class="fab fa-linkedin-in fa-stack-1x"></i>
+                        span Linkedin
+    section.general-cover 
+        .container 
+            .general
+                .about-us 
+                    h2.general__title Về chúng tôi 
+                    .line 
+                        img(src="../assets/images/line.png", alt="-----////-----")
+                    .general__content
+                        img(src="../assets/icons/Logo.png", alt="logo")
+                        h3 Giới thiệu chung về mỹ phẩm handmade Mandala 
+                        p Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt. Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
+                        div 
+                            a(href="") Xem thêm
+                .blog 
+                    h2.general__title blog
+                    .line 
+                        img(src="../assets/images/line.png", alt="-----////-----")
+                    .general__content
+                        img(src="../assets/images/home/blog-news.png", alt="logo")
+                        h3 Review son kem Bourjois Velvet
+                        hr
+                        p Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt. 
+                        p.author Bởi NamTran ( 27 / 05 / 2015 )
+                        hr
+                        div 
+                            a(href="/blog.html") Đọc thêm
+                            span 23 Bình luận
+                .email 
+                    h2.general__title gửi email cho chúng tôi
+                    .line 
+                        img(src="../assets/images/line.png", alt="-----////-----")
+                    .general__content 
+                        form(action="")
+                            input(type="text" id="email" name="email" placeholder="Email của bạn")
+                            label Gửi email để nhận được những ưu đãi mới nhất
+                            input(type="submit" value="Gửi")
+                .tags
+                    h2.general__title tag sản phẩm
+                    .line 
+                        img(src="../assets/images/line.png", alt="-----////-----")
+                    .general__content 
+                        ul
+                            li
+                                a(href="") Đồng hồ
+                            li
+                                a(href="") Túi
+                            li
+                                a(href="") Phụ kiện
+                            li
+                                a(href="") Đông hồ
+                            li
+                                a(href="") Túi
+                            li
+                                a(href="") Giày
+                            li
+                                a(href="") Sandal
+                            li
+                                a(href="") Áo sơ mi
+                            li
+                                a(href="") Nước hoa
+                            li
+                                a(href="") Giày
+                            li
+                                a(href="") Sandal
+                            li
+                                a(href="") Trẻ em
+                            li
+                                a(href="") Thời trang nữ
+                            li
+                                a(href="") Trẻ em
+                            li
+                                a(href="") Thời trang nữ

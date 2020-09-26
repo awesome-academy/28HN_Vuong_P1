@@ -1,0 +1,196 @@
+@import "../base/variables";
+.news {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    .breadcrumb,
+    h1,
+    h2 {
+        grid-column-start: span 6;
+    }
+    &__expand {
+        grid-column-start: span 2;
+    }
+    &__content {
+        grid-column-start: span 4;
+    }
+    h1 {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: normal;
+        margin: 20px 0;
+    }
+    h2 {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: normal;
+    }
+    &__expand {
+        .article-sub {
+            margin: 20px 0;
+            &__child {
+                display: flex;
+                div:nth-child(1) {
+                    width: 30%;
+                    margin-right: 20px;
+                }
+                div:nth-child(2) {
+                    width: 60%;
+                }
+                div {
+                    img {
+                        width: 100%;
+                    }
+                    p.date {
+                        span:first-child {
+                            font-size: x-large;
+                            font-weight: bold;
+                        }
+                        span:last-child {
+                            font-size: medium;
+                            font-weight: bold;
+                        }
+                    }
+                    p.by {
+                        font-style: italic;
+                        color: gray;
+                    }
+                }
+            }
+        }
+        .tags {
+            .general__title {
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .general__content ul {
+                display: flex;
+                flex-flow: row wrap;
+                margin-bottom: 20px;
+                li {
+                    margin: 10px 10px 0 0;
+                    padding: 8px;
+                    border: 1px solid #6e6e6e;
+                    a {
+                        color: black;
+                        font-size: 13px;
+                        &:hover {
+                            color: $default-color;
+                        }
+                    }
+                }
+                li:nth-child(1) {
+                    a {
+                        color: white;
+                    }
+                    background-color:$default-color;
+                }
+            }
+        }
+        .video {
+            &__title {
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: bold;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+                border-bottom: 1px solid gray;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &__content {
+        .articles {
+            .article {
+                margin: 20px 0;
+                img {
+                    width: 100%;
+                }
+                h3 {
+                    font-size: 18px;
+                    text-transform: uppercase;
+                }
+                hr {
+                    margin: 5px 0;
+                }
+                p {
+                    font-size: 16px;
+                }
+                .author {
+                    color: #6e6e6e;
+                    font-style: italic;
+                    margin: 5px 0 10px 0;
+                }
+                &>div {
+                    padding: 5px 0 10px 0;
+                    a {
+                        color: #6e6e6e;
+                        font-size: 14px;
+                        &:hover {
+                            color: $default-color;
+                        }
+                    }
+                    span {
+                        color: #6e6e6e;
+                        float: right;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .tag {
+            width: 100%;
+            border-bottom: 1px solid gray;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            span:first-child {
+                color: grey;
+            }
+        }
+        form {
+            margin-bottom: 20px;
+            input[type=text],
+            textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid gray;
+                border-radius: 4px;
+            }
+            label {
+                padding: 12px 12px 12px 0;
+                display: inline-block;
+            }
+            input[type=submit] {
+                background-color: #050505;
+                color: white;
+                padding: 12px 20px;
+                cursor: pointer;
+                float: left;
+                text-transform: uppercase;
+                font-size: 16px;
+                margin-left: 10%;
+            }
+            input[type=submit]:hover {
+                background-color: $green-light;
+            }
+            .col-10 {
+                float: left;
+                width: 10%;
+            }
+            .col-90 {
+                float: left;
+                width: 90%;
+            }
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

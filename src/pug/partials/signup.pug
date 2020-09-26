@@ -1,0 +1,42 @@
+
+main 
+    .container 
+        .signup
+            section.breadcrumb
+                ul
+                    li Home
+                    li 
+                        a Đăng ký
+            h1 Đăng ký
+            form
+                h2 Thông tin cá nhân
+                label(for="first-name") Tên trước *
+                br 
+                input#first-name(type="text", name="first-name")
+                br
+                label(for="last-name") Tên sau *
+                br 
+                input#last-name(type="text", name="last-name")
+                br
+                label(for="e-mail") Email * 
+                br 
+                input#e-mail(type="text", name="e-mail")
+                br 
+                label(for="pwd") Password * 
+                br 
+                input#pwd(type="text", name="pwd")
+                br 
+                input#sign-news(type="checkbox", name="sign-news")
+                label(for="sign-news") Đăng ký nhận tin
+                h2 Thông tin đăng nhập
+                label(for="passwd") Mật khẩu * 
+                br 
+                input#passwd(type="text", name="passwd")
+                br 
+                label(for="repasswd") Nhập lại mật khẩu * 
+                br 
+                input#repasswd(type="text", name="repasswd")
+                br 
+                input(type="button", value="Gửi")
+                button <i class="fas fa-hand-point-left"></i>&ensp;Quay lại
+

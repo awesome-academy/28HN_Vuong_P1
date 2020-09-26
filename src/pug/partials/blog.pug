@@ -1,0 +1,51 @@
+- const arrImg = ["Layer 69 copy 2.png", "Layer 77.png", "Layer 78.png", "Layer 79.png", "Layer 80.png", "Layer 81.png", "Layer 82.png", "Layer 83.png", "Layer 84.png" ]
+                
+main
+    .container 
+        div.blogs    
+            ul.breadcrumb
+                li Home
+                li Sản phẩm
+                li #[a(href="") Trang sức]
+                li #[a(href="") Lắc tay]
+
+            h1 blog
+
+            .view 
+                .view__display 
+                    input#grid(type="radio", name="view__display" checked)
+                    label(for="grid") <i class="fas fa-th-large fa-lg"></i>
+                    input#list(type="radio", name="view__display")
+                    label(for="list") <i class="fas fa-list fa-lg"></i>
+                .view__pagination
+                    a(href="") &#10096;
+                    a(href="") 1
+                    a(href="") 2
+                    a(href="") 3
+                    a(href="") &#10097;
+
+            .articles 
+                each value, index in arrImg 
+                    .article
+                        img(src=`../assets/images/blog/${value}`, alt="logo")
+                        h3 Review son kem Bourjois Velvet
+                        hr
+                        p Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt. 
+                        p.author Bởi NamTran ( 27 / 05 / 2015 )
+                        hr
+                        div 
+                            a(href="/blog-detail.html") Đọc thêm &#10095;
+                            span 23 Bình luận
+
+            .view 
+                .view__display 
+                    label(for="grid") <i class="fas fa-th-large fa-lg"></i>
+                    label(for="list") <i class="fas fa-list fa-lg"></i>
+                .view__pagination
+                    a(href="") &#10096;
+                    a(href="") 1
+                    a(href="") 2
+                    a(href="") 3
+                    a(href="") &#10097;
+
+    

@@ -1,0 +1,93 @@
+include ../base/popup.pug
+input#dropdown-prod(type="checkbox", name="dropdown-prod")
+input#dropdown-cart(type="checkbox", name="dropdown-cart")
+header
+    .container 
+        nav
+            .top-nav
+                a.top-nav__logo #[img#logo(src="../assets/icons/Logo.png" alt="logo")]
+                input#res-menu(type="checkbox")
+                label( for="res-menu") 
+                    i#sign-open.fa.fa-bars.fa-2x 
+                    i#sign-close.fa.fa-times.fa-3x 
+                ul.top-nav__menu 
+                    li 
+                        a(href="/") Trang chủ
+                    li 
+                        a Giới thiệu 
+                    li  
+                        .dropdown-prod 
+                            
+                            .dropdown-prod__btn 
+                                label(for="dropdown-prod") Sản phẩm 
+                                    i.fas.fa-angle-down
+                            .dropdown-prod__content 
+                                .col
+                                    h3 Dưỡng da
+                                    a Áo khoác
+                                    a.green-light &bull; Bộ áo liền quần
+                                    a Dresses
+                                    a Quần / Váy
+                                    a Quần short
+                                    a Quần jean
+                                    a Đồ đan
+                                    a Áo nỉ
+                                .col
+                                    h3 Nước hoa
+                                    a Áo cánh / Áo sơ mi
+                                    a Khăn quàng cổ và Foulards
+                                    a Dệt kim Hats & Gloves
+                                    a Vớ & Socks
+                                    a Jewerly
+                                    a Bị bảo vệ
+                                    a Giày
+                                .col 
+                                    h3 Trang sức
+                                    a Áo cánh / Áo sơ mi
+                                    a Túi xách & Balô
+                                    a Khăn quàng cổ và Foulards
+                                    a Dệt kim Hats & Gloves
+                                    a Vớ & Socks
+                                    a Jewerly
+                                    a Bị bảo vệ
+                                    a Giày
+                    li 
+                        a Tin tức 
+                    li 
+                        a Bản đồ 
+                    li  
+                        a(href="/contact-us.html") Liên hệ
+                ul.top-nav__search 
+                    li 
+                        .dropdown-cart 
+                            .dropdown-cart__btn 
+                                label(for="dropdown-cart")
+                                    i.fas.fa-shopping-cart
+                            .dropdown-cart__content
+                                .dropdown-cart__content__row
+                                    .img
+                                        img(src="../assets/images/Layer 62 copy.png", alt="")
+                                    .desc 
+                                        p Áo sơ mi Nam
+                                        p 120.000
+                                            span đ
+                                    .icon <i class="fas fa-times"></i>
+                                .dropdown-cart__content__row
+                                    .img
+                                        img(src="../assets/images/Layer 62 copy.png", alt="")
+                                    .desc 
+                                        p Áo sơ mi Nam
+                                        p 120.000
+                                            span đ
+                                    .icon <i class="fas fa-times"></i>
+                                .dropdown-cart__content__row
+                                    div
+                                        p Tổng só 
+                                        p 240.000 
+                                            span đ
+                                    button Giỏ hàng
+
+                    li 
+                        a 
+                            i.fas.fa-search
+            

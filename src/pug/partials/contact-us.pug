@@ -1,0 +1,35 @@
+main 
+    .container 
+        .contact-us
+            section.breadcrumb
+                ul
+                    li Home
+                    li 
+                        a Liên hệ
+            h1 Liên hệ
+            .contact-us__content 
+                .contact-us__content__img 
+                    img(src="../assets/images/Layer_75.png", alt="")
+                .contact-us__content__desc 
+                    form 
+                        .row 
+                            .col-100 
+                                label Gửi email cho chúng tôi
+                        .row
+                            .col-20
+                                label(for="f-name") Tên *
+                            .col-80 
+                                input#f-name(type="text", name="f-name")
+                        .row
+                            .col-20
+                                label(for="f-email") Email *
+                            .col-80 
+                                input#f-email(type="text", name="f-email") 
+                        .row
+                            .col-20
+                                label(for="f-cmt") Tin nhắn *
+                            .col-80 
+                                textarea#f-cmt(name="f-cmt"  rows="10")
+                        .row 
+                            .col-100 
+                                input(type="submit", value="Gửi")

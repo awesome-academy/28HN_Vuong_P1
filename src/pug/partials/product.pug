@@ -1,0 +1,230 @@
+main 
+    section.breadcrumb
+        .container
+            ul
+                li Home
+                li Sản phẩm
+                li #[a(href="") Trang sức]
+                li #[a(href="") Lắc tay]
+    section.banner-product 
+        img(src="../assets/images/product/banner.png", alt="")
+    section 
+        .container
+            .the-main
+                .side-bar 
+                    .portfolio 
+                        .portfolio__title <i class="fas fa-bars"></i> Danh mục sản phẩm
+                        ul 
+                            li Mỹ phẩm <i class="fas fa-caret-right"></i>
+                            li 
+                                .dropdown-none 
+                                    .dropdown__btn-none Trang sức <i class="fas fa-caret-down"></i>
+                                    .dropdown__content-none 
+                                        a Vòng tay
+                                        a Nhẫn
+                                        a Lác chân 
+                                        a Phụ kiện khác
+                                        a Giày lười, Giày mọi
+                            li Phụ kiện <i class="fas fa-caret-right"></i>
+                            li Nước hoa <i class="fas fa-caret-right"></i>
+                    .compare 
+                        h3 So sánh sản phẩm
+                        p Bạn chưa chọn sản phẩm nào để so sánh
+                    .tags 
+                        .tags__title Tags sản phẩm
+                        ul
+                            li
+                                a(href="") Đồng hồ
+                            li
+                                a(href="") Túi
+                            li
+                                a(href="") Phụ kiện
+                            li
+                                a(href="") Đông hồ
+                            li
+                                a(href="") Túi
+                            li
+                                a(href="") Giày
+                            li
+                                a(href="") Sandal
+                            li
+                                a(href="") Áo sơ mi
+                            li
+                                a(href="") Nước hoa
+                    .ads 
+                        img(src="../assets/images/product/04_Gird.png", alt="")
+                .content 
+                    input#grid(type="radio", name="view__display" checked)
+                    input#list(type="radio", name="view__display")
+                    .view 
+                        .view__display 
+                            
+                            label.forgrid(for="grid") <i class="fas fa-th-large fa-lg"></i>
+                            
+                            label.forlist(for="list") <i class="fas fa-list fa-lg"></i>
+                        .view__pagination
+                            a(href="") &#10096;
+                            a(href="") 1
+                            a(href="") 2
+                            a(href="") 3
+                            a(href="") &#10097;
+                    .products--mod 
+                        .product 
+                            a(href="/product-detail.html") 
+                                img.product__img(src="../assets/images/home/Layer 78.png", alt="")
+                            p.product__trademark OHUI
+                            p.product__species Mỹ phẩm châu Âu
+                            p.product__line ____
+                            p.product__price 355.000
+                                span.vnd đ
+                            ul.product__action 
+                                button.action__buy Mua hàng
+                                span.like <i class="fas fa-heart"></i>
+                                span.reset <i class="fas fa-sync fa-lg"></i>
+                        .product 
+                            a(href="/product-detail.html") 
+                                img.product__img(src="../assets/images/home/Layer 85.png", alt="")
+                            p.product__trademark home
+                            p.product__species Mỹ phẩm châu Âu
+                            p.product__line ____
+                            p.product__price 355.000
+                                span.vnd đ
+                                span.old-price 450.000
+                                span.old-vnd đ
+                            ul.product__action 
+                                button.action__buy Mua hàng
+                                span.like <i class="fas fa-heart"></i>
+                                span.reset <i class="fas fa-sync fa-lg"></i>
+                        .product 
+                            a(href="/product-detail.html") 
+                                img.product__img(src="../assets/images/home/Layer 83.png", alt="")
+                            p.product__trademark deora
+                            p.product__species Mỹ phẩm châu Âu
+                            p.product__line ____
+                            p.product__price 355.000
+                                span.vnd đ
+                            ul.product__action 
+                                button.action__buy Mua hàng
+                                span.like <i class="fas fa-heart"></i>
+                                span.reset <i class="fas fa-sync fa-lg"></i>
+                        .product 
+                            a(href="/product-detail.html") 
+                                img.product__img(src="../assets/images/home/Layer 78.png", alt="")
+                            p.product__trademark OHUI
+                            p.product__species Mỹ phẩm châu Âu
+                            p.product__line ____
+                            p.product__price 355.000
+                                span.vnd đ
+                            ul.product__action 
+                                button.action__buy Mua hàng
+                                span.like <i class="fas fa-heart"></i>
+                                span.reset <i class="fas fa-sync fa-lg"></i>
+                        .product 
+                            a(href="/product-detail.html") 
+                                img.product__img(src="../assets/images/home/Layer 85.png", alt="")
+                            p.product__trademark home
+                            p.product__species Mỹ phẩm châu Âu
+                            p.product__line ____
+                            p.product__price 355.000
+                                span.vnd đ
+                                span.old-price 450.000
+                                span.old-vnd đ
+                            ul.product__action 
+                                button.action__buy Mua hàng
+                                span.like <i class="fas fa-heart"></i>
+                                span.reset <i class="fas fa-sync fa-lg"></i>
+                        .product 
+                            a(href="/product-detail.html") 
+                                img.product__img(src="../assets/images/home/Layer 83.png", alt="")
+                            p.product__trademark deora
+                            p.product__species Mỹ phẩm châu Âu
+                            p.product__line ____
+                            p.product__price 355.000
+                                span.vnd đ
+                            ul.product__action 
+                                button.action__buy Mua hàng
+                                span.like <i class="fas fa-heart"></i>
+                                span.reset <i class="fas fa-sync fa-lg"></i>
+                        .product--list 
+                            .product--list__img 
+                                a(href="/product-detail.html") 
+                                    img(src="../assets/images/product/Layer 85 copy.png", alt="")
+                            .product--list__content 
+                                .product--list__content__title Mỹ phẩm châu Âu thương hiệu hàng  đầu thế giới 
+                                .product--list__content__like 
+                                    ul 
+                                        li <i class="fas fa-heart"></i>
+                                        li <i class="fas fa-heart"></i>
+                                        li <i class="fas fa-heart"></i>
+                                        li <i class="fas fa-heart"></i>
+                                        li <i class="fas fa-heart"></i>
+                                    p ( 4 lượt mua )
+                                p.product--list__content__desc Tự hào được ghi là năm mà Tiffany & Co là thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà.
+                                p.product--list__content__price 355.000
+                                    span.vnd đ
+                                    span.old-price  450.000
+                                    span.old-vnd đ
+                                ul.product--list__content__action 
+                                    button.action__buy Mua hàng
+                                    span.like <i class="fas fa-heart"></i>
+                                    span.reset <i class="fas fa-sync fa-lg"></i>
+                        .product--list 
+                            .product--list__img 
+                                a(href="/product-detail.html") 
+                                    img(src="../assets/images/product/Layer 85 copy.png", alt="")
+                            .product--list__content 
+                                .product--list__content__title Mỹ phẩm châu Âu thương hiệu hàng  đầu thế giới 
+                                .product--list__content__like 
+                                    ul 
+                                        li <i class="fas fa-heart"></i>
+                                        li <i class="fas fa-heart"></i>
+                                        li <i class="fas fa-heart"></i>
+                                        li <i class="fas fa-heart"></i>
+                                        li <i class="fas fa-heart"></i>
+                                    p ( 4 lượt mua )
+                                p.product--list__content__desc Tự hào được ghi là năm mà Tiffany & Co là thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà.
+                                p.product--list__content__price 355.000
+                                    span.vnd đ
+                                    span.old-price  450.000
+                                    span.old-vnd đ
+                                ul.product--list__content__action 
+                                    button.action__buy Mua hàng
+                                    span.like <i class="fas fa-heart"></i>
+                                    span.reset <i class="fas fa-sync fa-lg"></i>
+                        .product--list 
+                            .product--list__img 
+                                a(href="/product-detail.html") 
+                                    img(src="../assets/images/product/Layer 85 copy.png", alt="")
+                            .product--list__content 
+                                .product--list__content__title Mỹ phẩm châu Âu thương hiệu hàng  đầu thế giới 
+                                .product--list__content__like 
+                                    ul 
+                                        li <i class="fas fa-heart"></i>
+                                        li <i class="fas fa-heart"></i>
+                                        li <i class="fas fa-heart"></i>
+                                        li <i class="fas fa-heart"></i>
+                                        li <i class="fas fa-heart"></i>
+                                    p ( 4 lượt mua )
+                                p.product--list__content__desc Tự hào được ghi là năm mà Tiffany & Co là thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà.
+                                p.product--list__content__price 355.000
+                                    span.vnd đ
+                                    span.old-price  450.000
+                                    span.old-vnd đ
+                                ul.product--list__content__action 
+                                    button.action__buy Mua hàng
+                                    span.like <i class="fas fa-heart"></i>
+                                    span.reset <i class="fas fa-sync fa-lg"></i>
+
+                    .view 
+                        .view__display 
+                            label.forgrid(for="grid") <i class="fas fa-th-large fa-lg"></i>
+                            label.forlist(for="list") <i class="fas fa-list fa-lg"></i>
+                        .view__pagination
+                            a(href="") &#10096;
+                            a(href="") 1
+                            a(href="") 2
+                            a(href="") 3
+                            a(href="") &#10097;
+
+
+

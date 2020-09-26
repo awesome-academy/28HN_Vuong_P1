@@ -1,0 +1,49 @@
+.notfound {
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 100%;
+    }
+    p {
+        font-size: 24px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    form {
+        margin-bottom: 20px;
+        min-width: 400px;
+        input[type=text] {
+            float: left;
+            border-radius: 50px 0 0 50px;
+            width: 80%;
+            padding: 10px;
+            border: 1px solid gray;
+            border-right: none;
+        }
+        button {
+            float: left;
+            border-radius: 0 50px 50px 0;
+            width: 20%;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid gray;
+            border-left: none;
+        }
+    }
+    div {
+        margin-bottom: 20px;
+        span {
+            font-size: 16px;
+            padding: 0 20px;
+            &:first-child {
+                border-right: 1px solid grey;
+            }
+            a {
+                color: black;
+            }
+        }
+    }
+}

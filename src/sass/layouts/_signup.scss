@@ -1,0 +1,64 @@
+@import "../base/variables";
+.signup {
+    .breadcrumb {
+        ul {
+            padding: 20px 0;
+            list-style: none;
+            margin-bottom: 20px;
+            border-bottom: 1px solid gray;
+            li {
+                display: inline;
+                font-size: 18px;
+                a {
+                    color: $default-color;
+                    text-decoration: none;
+                    &:hover {
+                        color: darkblue;
+                    }
+                }
+            }
+            li+li:before {
+                padding: 8px;
+                color: black;
+                content: "\276F";
+            }
+        }
+    }
+    h1 {
+        text-transform: uppercase;
+        font-weight: normal;
+        padding-bottom: 10px;
+    }
+    form {
+        background-color: #f2f2f2;
+        padding: 30px;
+        margin: 20px 0;
+        h2 {
+            text-transform: uppercase;
+            font-weight: normal;
+            margin: 20px 0;
+        }
+        label {
+            font-size: 16px;
+        }
+        input[type=text] {
+            width: 100%;
+            margin: 10px 0 20px 0;
+            height: 30px;
+        }
+        input[type=checkbox] {
+            width: 10px;
+        }
+        input[type=button],
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            color: white;
+            background-color: black;
+            text-transform: uppercase;
+        }
+        button {
+            float: right;
+        }
+    }
+}

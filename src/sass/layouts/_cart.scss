@@ -1,0 +1,79 @@
+@import "../base/variables";
+.my-cart {
+    min-height: 50vh;
+    background-color: white;
+    margin-bottom: 20px;
+    .breadcrumb {
+        ul {
+            padding: 20px 0;
+            list-style: none;
+            margin-bottom: 20px;
+            border-bottom: 1px solid gray;
+            li {
+                display: inline;
+                font-size: 18px;
+                a {
+                    color: $default-color;
+                    text-decoration: none;
+                    &:hover {
+                        color: darkblue;
+                    }
+                }
+            }
+            li+li:before {
+                padding: 8px;
+                color: black;
+                content: "\276F";
+            }
+        }
+    }
+    h1 {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: normal;
+        padding-bottom: 20px;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+        th,
+        td {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            span {
+                font-size: 10px;
+                vertical-align: top;
+            }
+        }
+        th {
+            background-color: #fafafa;
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+        tr td:nth-child(3),
+        tr td:nth-child(5) {
+            font-weight: bold;
+        }
+    }
+    ul.action {
+        display: flex;
+        justify-content: flex-end;
+        margin: 20px 0;
+        li {
+            margin-left: 20px;
+            button {
+                text-transform: uppercase;
+                font-size: 14px;
+                padding: 10px 20px;
+                color: white;
+                background-color: black;
+            }
+            &:last-child button {
+                background-color: $default-color;
+            }
+        }
+    }
+}

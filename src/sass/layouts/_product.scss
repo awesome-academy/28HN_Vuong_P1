@@ -1,0 +1,400 @@
+@import "../base/variables";
+main {
+    .breadcrumb {
+        ul {
+            padding: 20px 0;
+            list-style: none;
+            li {
+                display: inline;
+                font-size: 18px;
+                a {
+                    color: $default-color;
+                    text-decoration: none;
+                    &:hover {
+                        color: darkblue;
+                    }
+                }
+            }
+            li+li:before {
+                padding: 8px;
+                color: black;
+                content: "\276F";
+            }
+        }
+    }
+    .banner-product {
+        img {
+            width: 100%;
+        }
+    }
+    .the-main {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 20px;
+        .side-bar {
+            grid-column-start: span 3;
+            .portfolio {
+                &__title {
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    border-bottom: 1px solid grey;
+                    padding: 15px 0;
+                    margin: 20px 0;
+                }
+                ul {
+                    li {
+                        border-bottom: 1px solid grey;
+                        padding: 15px 0;
+                        font-weight: 600;
+                        font-size: 17px;
+                        i {
+                            float: right;
+                        }
+                        .dropdown-none {
+                            .dropdown__btn-none {
+                                font-weight: 600;
+                                font-size: 17px;
+                                i {
+                                    float: right;
+                                }
+                            }
+                            .dropdown__content-none {
+                                display: flex;
+                                flex-direction: column;
+                                a:before {
+                                    content: "\2022   ";
+                                }
+                                a {
+                                    line-height: 20px;
+                                    font-size: 16px;
+                                    color: black;
+                                    margin-right: 10px;
+                                    font-weight: normal;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .compare {
+                h3 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    border-bottom: 1px solid grey;
+                    padding: 15px 0;
+                    margin: 20px 0;
+                }
+                p {
+                    font-size: 16px;
+                    color: grey;
+                }
+            }
+            .tags {
+                &__title {
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    border-bottom: 1px solid grey;
+                    padding: 15px 0;
+                    margin: 20px 0;
+                }
+                ul {
+                    display: flex;
+                    flex-flow: row wrap;
+                    margin-bottom: 20px;
+                    li {
+                        margin: 10px 10px 0 0;
+                        padding: 8px;
+                        border: 1px solid grey;
+                        a {
+                            color: black;
+                            font-size: 13px;
+                            &:hover {
+                                color: $default-color;
+                            }
+                        }
+                    }
+                    li:nth-child(1) {
+                        a {
+                            color: white;
+                        }
+                        background-color:$default-color;
+                    }
+                }
+            }
+            .ads {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .content {
+            grid-column-start: span 9;
+            .view {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid grey;
+                margin: 20px 0;
+                padding: 7px 0;
+                &__display {
+                    display: flex;
+                    input {
+                        display: none;
+                    }
+                    label {
+                        margin-right: 10px;
+                        i {
+                            color: gray;
+                        }
+                    }
+                }
+                &__pagination {
+                    display: inline-block;
+                    a {
+                        color: black;
+                        float: left;
+                        padding: 8px 8px;
+                        text-decoration: none;
+                        line-height: 28px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            .products--mod {
+                display: flex;
+                flex-flow: row wrap;
+                .product {
+                    width: 30%;
+                    height: 441px;
+                    margin: 0 10px;
+                    padding: 10px 0;
+                    background-color: white;
+                    text-align: center;
+                    &:hover {
+                        .product__action {
+                            visibility: visible;
+                        }
+                    }
+                    &__img {
+                        width: 100%;
+                        border-bottom: 1px gray dashed;
+                    }
+                    &__trademark {
+                        color: gray;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+                    &__species {
+                        font-weight: 600;
+                    }
+                    &__price {
+                        color: $default-color;
+                        font-family: "UTM Androgyne";
+                        font-size: 18px;
+                        span.vnd {
+                            font-size: 16px;
+                            vertical-align: top;
+                            font-family: "UTM Androgyne";
+                        }
+                        span.old-price {
+                            color: gray;
+                            font-family: "UTM Androgyne";
+                        }
+                        span.old-vnd {
+                            color: gray;
+                            font-size: 16px;
+                            vertical-align: top;
+                            font-family: "UTM Androgyne";
+                        }
+                    }
+                    &__action {
+                        visibility: hidden;
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 20px 0;
+                        .action__buy {
+                            color: black;
+                            font-size: 14px;
+                            font-weight: normal;
+                            padding: 10px 10px;
+                            border-radius: 10px;
+                            border: 2px gray solid;
+                            cursor: pointer;
+                            &:hover {
+                                background-color: $default-color;
+                            }
+                        }
+                        input {
+                            display: none;
+                        }
+                        .like {
+                            color: black;
+                            background-color: white;
+                            border: 2px black solid;
+                        }
+                        #like:checked~label:first-child {
+                            color: white;
+                            background-color: $default-color;
+                        }
+                        span {
+                            cursor: pointer;
+                        }
+                        span.like {
+                            padding: 10px 12px;
+                            margin: 10px;
+                            color: white;
+                            background-color: $default-color;
+                            border-radius: 5px;
+                            border: none;
+                        }
+                        span.reset {
+                            padding: 8px;
+                            border-radius: 5px;
+                            border: 1px solid grey;
+                        }
+                    }
+                }
+                .product--list {
+                    display: flex;
+                    &__img {
+                        img {
+                            width: 270px;
+                        }
+                    }
+                    &__content {
+                        &__title {
+                            font-weight: 600;
+                            font-size: 18px;
+                            margin-bottom: 15px;
+                        }
+                        &__like {
+                            display: flex;
+                            margin-bottom: 20px;
+                            ul {
+                                display: flex;
+                                li {
+                                    margin-right: 5px;
+                                }
+                            }
+                            p {
+                                font-size: 16px;
+                                font-weight: normal;
+                                color: grey;
+                            }
+                        }
+                        &__desc {
+                            font-size: 14px;
+                            font-weight: normal;
+                            color: rgb(177, 174, 174);
+                            margin-bottom: 20px;
+                        }
+                        &__price {
+                            color: $default-color;
+                            font-family: "UTM Androgyne";
+                            font-size: 18px;
+                            margin-bottom: 20px;
+                            span.vnd {
+                                font-size: 16px;
+                                vertical-align: top;
+                                font-family: "UTM Androgyne";
+                            }
+                            span.old-price {
+                                color: gray;
+                                font-family: "UTM Androgyne";
+                            }
+                            span.old-vnd {
+                                color: gray;
+                                font-size: 16px;
+                                vertical-align: top;
+                                font-family: "UTM Androgyne";
+                            }
+                        }
+                        &__action {
+                            display: flex;
+                            flex-flow: row wrap;
+                            justify-content: flex-start;
+                            align-items: center;
+                            margin: 20px 0;
+                            .action__buy {
+                                color: black;
+                                font-size: 14px;
+                                font-weight: normal;
+                                padding: 10px 10px;
+                                border-radius: 10px;
+                                border: 2px gray solid;
+                                cursor: pointer;
+                                &:hover {
+                                    background-color: $default-color;
+                                }
+                            }
+                            input {
+                                display: none;
+                            }
+                            .like {
+                                color: black;
+                                background-color: white;
+                                border: 2px black solid;
+                            }
+                            #like:checked~label:first-child {
+                                color: white;
+                                background-color: $default-color;
+                            }
+                            span {
+                                cursor: pointer;
+                            }
+                            span.like {
+                                padding: 10px 12px;
+                                margin: 10px;
+                                color: white;
+                                background-color: $default-color;
+                                border-radius: 5px;
+                                border: none;
+                            }
+                            span.reset {
+                                padding: 8px;
+                                border-radius: 5px;
+                                border: 1px solid grey;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#grid,
+#list {
+    display: none;
+}
+
+#grid:checked~.forgrid i,
+#list:checked~.forlist i {
+    color: black;
+}
+
+#grid:checked~.forlist i,
+#list:checked~.forgrid i {
+    color: grey;
+}
+
+#grid:checked~.products--mod .product {
+    display: block;
+}
+
+#grid:checked~.products--mod .product--list {
+    display: none;
+}
+
+#list:checked~.products--mod .product--list {
+    display: flex;
+}
+
+#list:checked~.products--mod .product {
+    display: none;
+}
